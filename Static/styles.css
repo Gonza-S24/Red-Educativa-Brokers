@@ -1,0 +1,395 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+}
+
+body{
+    background-color: #2b59a4;
+    margin: 10px 100px;
+    padding: 0;
+}
+
+header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px black;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    border-radius: 15px;
+}
+
+.menu a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    transition: 1s;
+    margin: 5px;
+    font-weight: bold;
+}
+.mostrarMenu,
+.esconderMenu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+}
+
+.mostrarMenu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrarMenu:hover,
+.esconderMenu:hover{
+    color:#fff;
+    background-color: #747272;
+    border-radius: 10px;
+   
+}
+
+#check{
+    display: none;
+}
+
+#logoBody{
+    background-image: url(img/Logos/Logo\ para\ Web-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    width: 100px;
+    height: 90px;
+}
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    transition: bottom 0.5s;
+}  
+.whatsapp-button {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #7c7878;
+    background-image: url(img/Icons/iconWap.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    border-radius: 100%;
+    transition: 1s;
+}
+.whatsapp-button:hover{
+    background-color: #00bb2d;
+}
+
+.volver-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    opacity: 0.5;
+    transition: opacity 5s ease;
+    background-color: #7c7878;
+    background-image: url(img/Icons/flechaArriba.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 1s;
+    border: none;
+    z-index: 1000;
+}
+.volver-button.show{
+    display: block;
+    pointer-events: auto;
+    opacity: 1;
+    
+}
+.volver-button:hover{
+background-color: #b45252;
+}
+
+.principal{
+    width: 100%;
+}
+
+p{
+    font-size: 20px;
+}
+
+.inicio{
+    background-color: #e2dbdb;
+    margin: 20px 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 520px;
+    justify-content: center;
+}
+.inicio img{
+    margin: 15px 20px;
+    width: 450px;
+    height: 300px;
+    transform: translateX(70%);
+    border-radius: 15px;
+}
+.inicio p{
+    transform: translateY(70%) translateX(-38%);
+    color: #000000;
+}
+
+#nosotros{
+    background-color: #fff;
+    text-align: center;
+    margin: 20px 5px;
+    border-radius: 20px;
+    height: 920px;
+}
+#nosotros h2{
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    transform: translateY(100%);
+}
+#nosotros img{
+    transform: translateY(10%);
+    border-radius: 20px;
+    margin: 10px;
+}
+#nosotros p{
+margin: 20px;
+transform: translateY(50%);
+}
+
+#diferencias{
+    background-color: #e2dbdb;
+    text-align: center;
+    margin: 20px 5px;
+    border-radius: 20px;
+    height: 700px;
+    display: block;
+}
+#diferencias h2{
+    transform: translateY(100%);
+}
+#diferencias img{
+    width: 550px;
+    height: 325px;
+    margin: 50px;
+    border-radius:20px
+}
+#diferencias p{
+    transform: translateY(10%);
+}
+
+#cursos{
+    background-color: #fff;
+    text-align: center;
+    margin: 20px 5px;
+    border-radius: 20px;
+    height: 1060px;
+}
+#cursos h2{
+transform: translateY(90%);
+}
+#cursos p{
+    transform: translateY(5%);
+}
+#cursos img{
+    margin: 25px;
+    border-radius: 20px;
+    height: 350px;
+    width: 600px;
+}
+#cursos ul{
+   list-style-type: none;
+   text-align: center;
+   text-decoration: underline;
+   font-weight: bold;
+   font-size: 20px;
+   transform: translateY(20%);
+}
+#cursos li{
+    margin: 15px;
+    transform: translateX(-2%);
+}
+
+#contacto{
+    background-color: #e2dbdb;
+    text-align: center;
+    border-radius: 20px;
+    height: 850px;
+    justify-content: center;
+}
+#contacto form{
+    text-align: left;
+    width: 550px;
+    margin: 10px 270px;
+    border-radius: 20px;
+    border: solid 2px #000000;
+    transform: translateY(15%)
+}
+#contacto div{
+    margin: 15px;
+}
+#contacto p, h2{
+    transform: translateY(80%);
+}
+#contacto input,
+textarea,
+select{
+    border-radius: 8px;
+}
+#enviar{
+    margin: 20px 20px;
+}
+::placeholder{
+    color: #bdbaba;
+}
+
+
+@media only screen and (max-width:760px){
+ body{
+    margin: 10px 0px;
+    padding: 0;
+    width: 100%;
+
+ }
+
+ .principal div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+    .mostrarMenu,
+    .esconderMenu{
+        display: block;
+    }
+
+  .menu{
+        position: fixed;
+        width: 60%;
+        height: auto;
+        background: #c4bfbf;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 2;
+        transition: 1s;
+        border: solid 2px #000000;
+        border-radius: 20px;
+        transition: right 1s ease;
+    }
+
+  .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+  .esconderMenu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+  #check:checked ~ .menu{
+        right: 0;
+    }
+
+  .whatsapp-button{
+    background-color: #00bb2c79;
+  }
+
+  .volver-button{
+    background-color: #b452526b;
+    
+  }
+
+  p{
+    font-size: 12px;
+  }
+
+    .inicio{
+        height: 320px;
+        justify-content: center;
+    }
+  .inicio img{
+    width: 250px;
+    height: 150px;
+    transform: translateX(0%) translateY(0%);
+  }
+  .inicio p{
+    transform: translateY(0%) translateX(0%);
+  }
+
+    #nosotros{
+        height: 650px;
+        
+    }
+    #nosotros img{
+        width: 250px;
+        height: 220px;
+      
+    }
+    #nosotros h2{
+     transform: translateX(0%) translateY(0%);
+    }
+    #nosotros p{
+      transform: translateX(0%) translateY(0);
+    }
+
+    #diferencias{
+        height: 570px;
+    }
+    #diferencias img{
+        width: 290px;
+        height: 160px;
+    }
+
+    #cursos{
+        height: 880px;
+    }
+    #cursos h2, p{
+        transform: translateX(0%) translateY(0%);
+    }
+    #cursos img{
+        width: 400px;
+        height: 250px;
+    }
+    #cursos ul{
+        font-size: 16px;
+        transform: translateX(-2%) translateY(0%);
+        margin: 45px;
+    }
+
+    #contacto{
+        height: 790px;
+    }
+    #contacto h2{
+        transform: translateX(0) translateY(0);
+    }
+    #contacto p{
+        transform: translateY(-25%);
+    }
+    #contacto form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 250px;
+        height: 500px;
+        transform: translateX(0) translateY(0);
+    }
+   
+
+}

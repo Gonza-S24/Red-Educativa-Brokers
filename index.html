@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Educativa Brokers</title>
+    <link rel="stylesheet" href="Static/styles.css">
+    <link rel="icon" href="Static/img/Logos/Logo para Web_Mesa de trabajo 1.png">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrarMenu">
+        &#8801
+        </label>
+        <nav class="menu">
+    
+            <a href="#nosotros">Nosotros</a>
+            <a href="#diferencias">Lo que nos diferencia</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#contacto">Contactanos</a>
+    
+            <label for="check" class="esconderMenu">
+                 &#215
+            </label>
+        </nav>
+        <div id="logoBody"></div>
+    </header>
+
+    <a href="https://api.whatsapp.com/send?phone=+59896024050&text=QUIERO%20INFORMACION%20DE" class="whatsapp-container" id="whatsapp-container">
+        <div class="whatsapp-button">
+        </div>
+    </a>
+    <button onclick="scrollToTop()" class="volver-button" id="scrollToTopButton"></button>
+
+    <div class="principal">
+
+        <div class="inicio">
+            <img src="Static/img/Img Body/Red Educativa.jpeg">
+
+            <p>Institución de capacitaciones a nivel nacional
+                <br>e internacional en diferentes áreas
+                <br>para cumplir con las necesidades de muchas personas.
+                <br>
+                <br>Nuestros cursos son de alto nivel para tener los mejores resultados.</p>
+        </div>
+        <div id="nosotros">
+            <h2>Nosotros:</h2>
+            <p id="p1">
+                Red Educativa Brokers es una Institución Educativa que brinda
+                <br>capacitaciones de alto nivel tecnológico y Docente .
+                <br>Brindamos formación en diversas áreas buscando la rápida inserción laboral de nuestros
+                <br>alumnos , contamos con grupos reducidos con interacción alumno profesor.
+            </p>
+
+            <img src="Static/img/Img Body/contenido4.jpeg">
+
+            <p>
+                Trabajamos con planes diferenciales para que toda la población
+                <br> tenga la posiblidad de capacitarse , contamos con un equipo multidisciplinario
+                <br> en el área academica , área laboral y 
+                <br> de asistencia educativa.
+                <br> Brindamos indicadores de resultados para ayudar a cada alumno a conseguir sus objetivos ,
+                <br> involucrados en cada causa.
+            </p>
+        </div>
+        <div id="diferencias">
+            <h2>Lo que nos diferencia:</h2>
+
+            <p>
+                Nos diferencia el compromiso constante con nuestros alumnos,
+                <br> contamos con un área de asistencia educativa para que cada uno  tenga un asesoramiento
+                <br> personalizado durante todo el transcurso de su capacitación.
+                <br> <img src="Static/img/Img Body/contenido3.jpeg">
+                <br> Brindando así la contención y asegurando el cumplimiento de sus objetivos tanto
+                <br> sea conseguir un empleo , cambiar o abrir un negocio por cuenta propia.
+            </p>
+
+        </div>
+        <div id="cursos">
+            <h2>Nuestros cursos</h2>
+            <p>
+                Nuestra institucion ofrece una gran variedad de 
+                <br> cursos de excelente calidad
+                <br> para capacitarse en ambitos tecnológicos y educativos
+                <br> a un increible precio.
+                <br>
+                <img src="Static/img/Img Body/contenido1.jpeg" >
+                <br> A continuacion vamos a mencionar los cursos que tenemos
+                <br> disponibles:
+            </p>
+            <ul>
+                <li>Recursos Humanos</li>
+                <li>Marketing PNL Ventas</li>
+                <li>Administración de Empresas</li>
+                <li>Marketing Digital</li>
+                <li>Liquidación de Sueldos</li>
+                <li>Atención al Cliente y Ventas</li>
+                <li>Logística y Comercio Exterior</li> 
+                <li>Instaladores de Calefactores de doble Combustión</li> 
+                <li>Instaladores de Aires Acondicionados</li> 
+            </ul>
+        </div>
+        <div id="contacto">
+            <h2>¿Quieres contactarnos?</h2>
+
+            <p>
+                Responde el siguiente formulario
+                <br> para enviarnos un correo electronico
+                <br> explicando tu duda.
+                <br>
+            </p>
+            <form action="https://formsubmit.co/info@rededucativabrokers.com" method="post">
+                <div>
+                    <label for="name">Nombre y Apellido</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Nombre Completo" required>
+                </div>
+                <div>
+                    <label for="email">Correo electronico</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+                </div>
+                <div>
+                    <label for="telefono">Numero de telefono</label>
+                    <br>
+                    <input type="text" id="telefono" name="phone" placeholder="+5411111111" required>
+                </div>
+               <div>
+                    <label for="curso">Elige el curso del que deseas mas información</label>
+                    <br>
+                    <select name="curso" id="curso" >
+                        <option value="RRHH">Recursos Humanos</option>
+                        <option value="MarketPNL">Marketing PNL Ventas</option>
+                        <option value="AdminE">Administración de Empresas</option>
+                        <option value="MarketD">Marketing Digital</option>
+                        <option value="LS">Liquidación de Sueldos</option>
+                        <option value="ACV">Atención al Cliente y Ventas</option>
+                        <option value="LCE">Logística y Comercio Exterior</option>
+                        <option value="InstalAC">Instalador de AC</option>
+                        <option value="InstalCDC">Instalador de Calefactores</option>
+                    </select>
+               </div>
+               <div>
+                <label for="mensaje">Escribe tu consulta</label>
+                <br>
+                <textarea name="mensaje" id="mensaje" cols="25" rows="5" placeholder="Escribe tu consulta aqui" required></textarea>
+               </div>
+               <input type="submit" value="Enviar" id="enviar" >
+            </form>
+            <p>
+                <br> O bien, puedes enviarnos un mensaje de whatsapp
+                <br> con el boton a tu izquierda para una consulta mas especifica.
+            </p>
+
+        </div>
+
+
+    </div>
+
+  <script src="Script/scripts.js"></script>
+</body>
+</html>
